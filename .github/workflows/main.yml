@@ -33,7 +33,7 @@ jobs:
         run: npm install
 
       - name: Audit and fix vulnerabilities
-        run: npm audit fix
+        run: npm audit fix --force
 
       - name: Build project
         run: npm run build
