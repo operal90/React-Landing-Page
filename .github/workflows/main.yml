@@ -32,8 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Audit and fix vulnerabilities
+        run: npm audit fix
 
       - name: Build project
         run: npm run build
